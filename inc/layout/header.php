@@ -3,8 +3,9 @@
 <html>
 	<head>
 		<title>Portfolio of Joshua Clark, experienced front-end and back-end web developer</title>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8">
-		<meta name="description" content="Web developer seeks new programming challenges! Take a look at my past work portfolio here.">
+		
+		<meta charset="utf-8">
+		<meta name="description" content="Seasoned full-stack web developer seeks new programming challenges! Take a look at my past work portfolio here.">
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
