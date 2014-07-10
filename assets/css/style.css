@@ -1,41 +1,207 @@
-/*
-Syntax error: Invalid CSS after "@import 'small'": expected selector or at-rule, was "@media only scr..."
-        on line 3 of /cygdrive/d/web/www/portfolio/assets/sass/style.scss
-
-1: /cygdrive/d/web/www/portfolio/assets/sass/style.scss
-
-Backtrace:
-/cygdrive/d/web/www/portfolio/assets/sass/style.scss:3
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1149:in `expected'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1085:in `expected'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:28:in `parse'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:68:in `perform'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/bin/compass:44:in `call'
-/usr/lib/ruby/gems/1.9.1/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-/usr/bin/compass:23:in `load'
-/usr/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"@import 'small'\": expected selector or at-rule, was \"@media only scr...\"\A         on line 3 of /cygdrive/d/web/www/portfolio/assets/sass/style.scss\A \A 1: /cygdrive/d/web/www/portfolio/assets/sass/style.scss"; }
+/* line 3, ../sass/_small.scss */
+body {
+  margin: 0;
+}
+/* line 6, ../sass/_small.scss */
+body #header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d45e2e;
+  border: 1px solid #3f3f3f;
+}
+/* line 14, ../sass/_small.scss */
+body #header-inner {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  min-height: 100px;
+}
+/* line 20, ../sass/_small.scss */
+body #header-inner h1 {
+  margin: 0;
+}
+/* line 23, ../sass/_small.scss */
+body #logo {
+  position: absolute;
+  bottom: -0.29em;
+  color: #fff;
+  margin: 0 0 0 .33em;
+  font-size: 72px;
+  font-weight: normal;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  text-shadow: -5px 0 0 #3f3f3f, 2px 0 0 #3f3f3f, 0 -2px 0 #3f3f3f, -2px -2px 0 #3f3f3f;
+}
+/* line 34, ../sass/_small.scss */
+body #logo #first-letter {
+  text-shadow: -5px 0 0 #3f3f3f, 2px 0 0 #3f3f3f, -1px 1px 0 #3f3f3f, -5px -2px 0 #3f3f3f;
+}
+/* line 39, ../sass/_small.scss */
+body #nav {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+/* line 44, ../sass/_small.scss */
+body #nav .navlink {
+  display: inline-block;
+  padding: 0 0.9em;
+  border-radius: 1px 1px 0 0;
+  height: 2.25em;
+  line-height: 2.45em;
+  font-size: 18px;
+  font-family: 'Fjalla One', sans-serif;
+  color: #f6d4ca;
+  outline: none;
+  border: 2px solid #d45e2e;
+  border-top-width: 4px;
+  border-right-width: 5px;
+  border-bottom: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s linear, text-shadow 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
+}
+/* line 68, ../sass/_small.scss */
+body #nav .navlink:hover {
+  background-color: #e48062;
+  border-color: #e16f4c;
+  border-bottom: none;
+}
+/* line 74, ../sass/_small.scss */
+body #nav .navlink.active {
+  color: #3f3f3f;
+  background-color: #fff;
+  border: 2px solid #3f3f3f;
+  border-top-width: 4px;
+  border-right-width: 5px;
+  border-bottom: none;
+  padding-bottom: 1px;
+}
+/* line 86, ../sass/_small.scss */
+body .content, body #main p, body .main-section {
+  margin: 30px auto;
+  width: 95%;
+  color: #3f3f3f;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  text-shadow: 0 0 1px #3f3f3f;
+}
+/* line 94, ../sass/_small.scss */
+body #main {
+  margin: 130px auto;
+  width: 960px;
+}
+/* line 104, ../sass/_small.scss */
+body .main-section h2 {
+  margin: 0 0 0.65em;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 110, ../sass/_small.scss */
+body .main-section h3 {
+  margin-left: 1%;
+  font-size: 20px;
+}
+/* line 115, ../sass/_small.scss */
+body .main-section a {
+  color: #d45e2e;
+}
+/* line 118, ../sass/_small.scss */
+body .main-section a:hover {
+  color: #dd7f5a;
+}
+/* line 123, ../sass/_small.scss */
+body .main-section li {
+  margin-bottom: 0.45em;
+}
+/* line 125, ../sass/_small.scss */
+body .main-section article {
+  margin-left: 2%;
+  margin-bottom: 2.25em;
+}
+/* line 131, ../sass/_small.scss */
+body .main-section#education-section article article {
+  margin-bottom: .75em;
+}
+/* line 137, ../sass/_small.scss */
+body .main-section#development li {
+  list-style-type: none;
+}
+/* line 143, ../sass/_small.scss */
+body .main-section .links-subsection li {
+  margin-bottom: 1.25em;
+}
+/* line 151, ../sass/_small.scss */
+body .inline {
+  display: inline;
+}
+/* line 155, ../sass/_small.scss */
+body .work-experience.old {
+  display: none;
+}
+/* line 159, ../sass/_small.scss */
+body #collapser {
+  display: block;
+  margin: 0 auto;
+  font-size: 48px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 169, ../sass/_small.scss */
+body blockquote {
+  width: 400px;
+  margin-bottom: 30px;
+}
+/* line 174, ../sass/_small.scss */
+body form {
+  margin-left: 50px;
+}
+/* line 178, ../sass/_small.scss */
+body label {
+  float: left;
+  width: 70px;
+  text-align: right;
+  margin-right: 10px;
+  line-height: 32px;
+}
+/* line 186, ../sass/_small.scss */
+body label.required::after {
+  content: '*';
+  color: red;
+}
+/* line 191, ../sass/_small.scss */
+body .placeholder {
+  float: left;
+  width: 70px;
+}
+/* line 196, ../sass/_small.scss */
+body .sep-line label.visible {
+  float: none;
+}
+/* line 200, ../sass/_small.scss */
+body .textbox, body textarea, body select {
+  font-family: Roboto, 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #6f6f6f;
+}
+/* line 207, ../sass/_small.scss */
+body .textbox {
+  width: 240px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* line 213, ../sass/_small.scss */
+body textarea {
+  width: 260px;
+  height: 140px;
+}
+/* line 218, ../sass/_small.scss */
+body #submit {
+  font-family: Roboto, 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+/* line 223, ../sass/_small.scss */
+body .error {
+  color: red;
+}

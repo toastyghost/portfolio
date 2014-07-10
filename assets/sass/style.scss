@@ -1,9 +1,9 @@
-@import 'small'
+@import '_small';
 
 @media only screen and (min-width: 40.063em) {
-	@import 'medium'
+	@import '_medium';
 }
 
 @media only screen and (min-width: 64.063em) {
-	@import 'large';
+	@import '_large';
 }
