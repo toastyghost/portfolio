@@ -1,4 +1,4 @@
-<?php require 'header.php' ?>
+<?php require 'inc/layout/header.php' ?>
 		
 <div id="main">
 	<section class="main-section" id="resume" name="resume">
@@ -385,4 +385,4 @@
 	</section>
 </div>
 		
-<?php require 'footer.php' ?>
+<?php require 'inc/layout/footer.php' ?>
