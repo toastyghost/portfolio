@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+
+.lightTip .content				{ max-width:180px; padding: 10px; border: 6px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #ffffff; color: #020202; }
+.lightTip .bottom				{ height: 14px; background: url(../images/notch-white.png) top center no-repeat; }
+
+.yellowTip .content				{ max-width:180px; padding: 10px; border: 6px solid #747051; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #9a9573; color: #020202; }
+.yellowTip .bottom				{ height: 14px; background: url(../images/notch-yellow.png) top center no-repeat; }
+
+.orangeTip .content				{ max-width:180px; padding: 10px; border: 6px solid #f9cd8e; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #fbe3aa; color: #020202; }
+.orangeTip .bottom				{ height: 14px; background: url(../images/notch-orange.png) top center no-repeat; }
+
+.redTip .content				{ max-width:180px; padding: 10px; border: 6px solid #ce6f6f; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #f79992; color: #020202; }
+.redTip .bottom					{ height: 14px; background: url(../images/notch-red.png) top center no-repeat; }
+
+.greenTip .content				{ max-width:180px; padding: 10px; border: 6px solid #a9db66; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #cae8a2; color: #020202; }
+.greenTip .bottom				{ height: 14px; background: url(../images/notch-green.png) top center no-repeat; }
+
+.blueTip						{ margin-top:-50px }
+.blueTip .content				{ max-width:180px; padding: 10px; border: 2px solid #3d6e76; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #1a9481; color: #fff; }
+.blueTip .bottom				{ height: 14px; background: url(../images/notch-blue.png) top center no-repeat; }
+
+.purpleTip .content				{ max-width:180px; padding: 10px; border: 6px solid #8671de; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #a290f0; color: #020202; }
+.purpleTip .bottom				{ height: 14px; background: url(../images/notch-purple.png) top center no-repeat; }
+
+.darkTip .content				{ max-width:180px; padding: 10px; border: 6px solid #303030; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #505050; color: #f8f8f8; }
+.darkTip .bottom				{ height: 14px; background: url(../images/notch-dark.png) top center no-repeat; }

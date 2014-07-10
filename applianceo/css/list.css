@@ -1,0 +1,145 @@
+#sidebar {	
+	display:inline-block;
+
+	width:202px;
+
+	text-align:left;
+	background-color:#f1f1f1;
+
+	padding-top:34px;
+	padding-left:23px;
+	padding-bottom:42px;
+	
+	line-height:1.45em;
+}
+
+.sidebarIndent {
+	padding-left:15px;
+}
+
+a.sidebarLink {
+	font-size:12px;
+	font-family:"Trebuchet MS";
+	color:black;
+}
+
+img.sidebarSpacer {
+	vertical-align:super;
+	padding-left:15px;
+}
+
+#list {
+	display:inline-block;
+	width:623px;
+
+	text-align:left;
+	vertical-align:top;
+}
+
+#topBar {
+	height:27px;
+	width:623px;
+/*	background-color:#cbcbcb; */
+	background-color:#d43132;
+	
+	text-align:center;
+	
+	margin-top:26px;
+	margin-left:0px;
+}
+
+td.topBarText {
+	padding-left:12px;
+
+	text-align:left;
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	color:white;
+}
+
+td.topBarSort {
+	text-align:right;
+	padding-right:4px;
+	color:white;
+}
+
+#sortMenu {
+	font-family:"Trebuchet MS";
+	font-size:10px;
+	
+	height:20px;
+}
+
+option.listdata {
+	font-family:"Trebuchet MS";
+	font-size:10px;
+}
+
+div.product {
+	padding:30px 0 30px 42px;
+}
+
+td.productImg {
+	padding:10px;
+}
+
+td.productInfo {
+	width:300px;
+	padding-left:33px;
+	
+	font-family:"Trebuchet MS";
+	font-size:12px;
+	
+	line-height:1.1em;
+}
+
+a.productLink {
+	font-size:12px;
+	font-family:"Trebuchet MS";
+	color:black;
+	text-decoration:underline;
+}
+
+a.productLink:hover {
+	color:#e61c20;
+}
+
+td.productPrice {
+	padding-top:15px;
+	padding-left:29px;
+	vertical-align:text-top;
+	
+	font-family:"Trebuchet MS";
+	font-size:16px;
+	font-weight:bold;
+	color:red;
+}
+
+div.listSpacerShadow {
+	width:202px;
+	background-color:#e2e2e2;
+}
+
+div.listSpacer {
+	height:1px;
+	width:500px;
+	background-color:#bfbfbf;
+}
+
+#paging {
+	width:inherit;
+	text-align:right;
+	padding-right:40px;
+}
+
+a.pageLink {
+	color:black;
+	font-family:"Trebuchet MS";
+	font-size:14px;
+	font-weight:bolder;
+}
+
+a.pageLink:hover {
+	color:#e61c20;
+	text-decoration:none;
+}

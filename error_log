@@ -1,0 +1,6 @@
+[16-Jun-2014 21:44:12 UTC] PHP Warning:  preg_match(): Compilation failed: range out of order in character class at offset 12 in /home/khameleo/public_html/work/validation.php on line 5
+[16-Jun-2014 21:45:54 UTC] PHP Warning:  preg_match(): Compilation failed: range out of order in character class at offset 12 in /home/khameleo/public_html/work/validation.php on line 5
+[16-Jun-2014 21:46:23 UTC] PHP Warning:  preg_match(): Compilation failed: range out of order in character class at offset 12 in /home/khameleo/public_html/work/validation.php on line 5
+[16-Jun-2014 21:47:42 UTC] PHP Warning:  preg_match(): Compilation failed: range out of order in character class at offset 12 in /home/khameleo/public_html/work/validation.php on line 5
+[16-Jun-2014 21:48:14 UTC] PHP Warning:  preg_match(): Compilation failed: range out of order in character class at offset 12 in /home/khameleo/public_html/work/validation.php on line 5
+[16-Jun-2014 21:49:35 UTC] PHP Warning:  preg_match(): Compilation failed: range out of order in character class at offset 12 in /home/khameleo/public_html/work/validation.php on line 5

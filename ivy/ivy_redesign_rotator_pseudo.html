@@ -1,0 +1,26 @@
+*** PSEUDO-CODE FOR IVYGROUP.COM HOMEPAGE NEWS ROTATOR ***
+
+when window loads,
+	set arrows' jquery data
+		right can move
+		left can't
+	compute the margin limit for each arrow's movement
+		left is zero
+		right is computed**
+
+when an arrow is clicked,
+	determine which side the clicked arrow is on
+	if that side's jquery data says it's allowed to move,
+		animate the thumbs list's left margin in the appropriate direction
+		animate the full-sized view to swap images in the appropriate direction
+		if the left margin at the end of the animation is at its limit for that direction,
+			set jquery data for the clicked arrow to disallow movement in that direction
+
+
+
+**formula:
+
+W = ul width
+w = li width (incl. margin)
+n = number of li's in ul
+r = movement limit for right arrow

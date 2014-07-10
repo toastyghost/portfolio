@@ -1,0 +1,46 @@
+<Files .htaccess>
+	Order Allow,Deny
+	Deny from all
+</files>
+
+Options All -indexes
+
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript image/x-icon
+	<IfModule mod_setenvif.c>
+		BrowserMatch ^Mozilla/4 gzip-only-text/html
+		BrowserMatch ^Mozilla/4\.0[678] no-gzip
+		BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+		BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+	</IfModule>
+	<IfModule mod_headers.c>
+		Header append Vary User-Agent env=!dont-vary
+		Header append Vary Accept-Encoding
+	</IfModule>
+</IfModule>
+
+<IfModule mod_headers.c>
+	Header unset Pragma
+	Header unset ETag
+	Header set Cache-Control "max-age=31536000, public, must-revalidate"
+</IfModule>
+
+FileETag none
+
+#<IfModule mod_expires.c>
+#	ExpiresActive On
+#	ExpiresDefault A31536000
+#	ExpiresByType text/html M3600
+#	ExpiresByType text/css M3628800
+#	ExpiresByType text/javascript M3628800
+#	ExpiresByType application/x-javascript M3628800
+#</IfModule>
+
+<FilesMatch "\.(php|py|rb)$">
+	<IfModule mod_expires.c>
+		ExpiresActive off
+	</IfModule>
+	<IfModule mod_headers.c>
+		Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+	</IfModule>
+</FilesMatch>

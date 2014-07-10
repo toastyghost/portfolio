@@ -1,0 +1,29 @@
+/* TEAM */
+	Designer: Stephen Burden
+	Email: burden [at] ivygroup [dot] com
+	
+	Server Developer: Bobby Pearson
+	Email: pearson [at] ivygroup [dot] com
+	
+	UI Developer: Josh Clark
+	Email: clark [at] ivygroup [dot] com
+	
+	Chief Content Writer and Financier: Pam Fitzgerald
+	Email: fitzgerald [at] ivygroup [dot] com
+	
+	Content Writer: Olin Ericksen
+	Email: ericksen [at] ivygroup [dot] com
+	
+	Content Writer: Franziska Matiuk
+	Email: matiuk [at] ivygroup [dot] com
+
+/* THANKS */
+	Bree Brostko and Melanie Jones, whose ideas and funds made it possible to create our in-house information management tool.
+
+	Allison Cassels, who provided pro bono design and code feedback throughout the months-long process.
+
+/* SITE */
+	Launched: 2011/05/20
+	Language: English
+	Doctype: XHTML
+	Software: Dreamweaver, Photoshop, Fireworks, PHP, MySQL, Mimik
