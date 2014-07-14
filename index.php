@@ -1,6 +1,54 @@
 <?php require 'inc/layout/header.php' ?>
 		
 <div id="main">
+
+	<section class="main-section" id="intro" name="intro">
+		<h2>Greetings &amp; salutations!</h2>
+		<p>This is a quick intro paragraph about me that will be filled in later. This is in no way meant to be final copy for this section of the site. If you see this on the live version of the site, don't hire me because I'm clearly a fucking idiot.</p>
+		<p>Thanks,</p>
+		<h2 style="font-family: Impact; font-size: 36px;">Insert signature graphic here</h2>
+	</section>
+
+	<section class="main-section" id="clients" name="clients">
+		<h2 style="font-family: Impact; font-size: 36px;">INSERT MAGICAL SCROLLY-GIG DOODAD THING HERE</h2>
+	</section>
+	
+	<section class="main-section" id="development" name="development">
+		<h2>Development</h2>
+		
+		<article class="links-subsection" id="links" name="links">
+			<h3>Links</h3>
+			<ul>
+				<li><a target="_blank" href="http://curvolabs.com">Curvo Labs</a> &ndash; Miscellaneous features, fixes, and styling added to medical equipment marketplace app that was built on CodeIgniter and also incorporated Composer, Phinx, Guzzle, and Stripe (among others).</li>
+				<li><a target="_blank" href="http://omegaconvention.com">OmegaCon</a> &ndash; Multiple (annual) responsive themes, content development, SEO, promotion, ecommerce, custom reports for registration desk and various department heads.</li>
+				<li><a target="_blank" href="http://khameleon.org/work/hslc">Health Sciences Library Consortium</a> &ndash; CSS build, most of a Drupal theme (the latter was handed off to the Commonwealth of Pennsylvania's in-house developers due to a last-minute change of plans on their end. As far as I know, the project is still in bureaucratic purgatory, hence the layout's being hosted on my own web space.)</li>
+				<li><a target="_blank" href="http://coreknowledge.org">Core Knowledge Foundation</a> &ndash; CSS build, many custom PHP components.</li>
+				<li><a target="_blank" href="http://blog.coreknowledge.org">Core Knowledge Blog</a> &ndash; Custom WordPress theme based on CSS build from the main site above.</li>
+				<li><a target="_blank" href="http://books.coreknowledge.org">Core Knowledge Bookstore</a> &ndash; X-Cart theming, management, warehouse integration with UPS WorldShip and Stamps.com, accounting/inventory integration with Great Plains, custom database triggers to handle tracking number postback and buyer notifications.</li>
+				<li><a target="_blank" href="http://rhainsure.com">Resort Hotel Association</a> &ndash; CSS build, many custom PHP components.</li>
+				<li><a target="_blank" href="http://khameleon.org/work/applianceo">Appliance Outlet</a> &ndash; CSS build, light graphical work.</li>
+				<li><a target="_blank" href="http://8great.org">James V. Brown Summer Reading Program</a> &ndash; CSS build converted from a print ad, so lots of optimization was needed to achieve reasonable load times.</li>
+				<li><a target="_blank" href="http://tigerfuel.com">Tiger Fuel</a> &ndash; Numerous content updates, reworking layout on certain pages, troubleshooting various features (like the Flash/XML accordion on the homepage), and adding features to the supply chain management system.</li>
+				<li><a target="_blank" href="http://cvilleshop.com">Charlottesville Shopping</a> &ndash; Troubleshooting of maps, Facebook integration, and coupon generator.</li>
+			</ul>
+		</article>
+		
+		<article class="links-subsection" id="code-samples" name="code-samples">
+			<h3>Code Samples</h3>
+			<ul>
+				<li><a target="_blank" href="https://github.com/toastyghost/auth-net-ajax">Auth.net AJAX component</a> &ndash; This is a PHP component that is called via AJAX to submit a payment request to Authorize.net and report back its success status. It also includes logic related to the event registration wizard for which it was originally created, rendering the user's "finish later" token useless (but still remembering that it has been assigned) if the transaction is processed successfully.</li>
+				<li><a target="_blank" href="https://github.com/toastyghost/python-cloud-upload">Rackspace Cloud Sideloader</a> &ndash; This is a Python command-line utility for uploading from the local dedicated server filesystem to Rackspace Cloud Files. Its purpose was to allow legacy PHP4 applications, which are not officially supported by Rackspace, to make programmatic calls via the cloud API.</li>
+				<li><a target="_blank" href="https://github.com/toastyghost/auto-body-page">SilverStripe Page Type</a> &ndash; This is a component that contains both view and controller classes for a new page type in SilverStripe, an ORM-based open source CMS that uses the MVC design pattern.</li>
+				<li><a target="_blank" href="https://github.com/toastyghost/wordpress_password">WordPress Password Module for Drupal 7.x</a> &ndash; This is a Drupal 7 module that implements PHPass (the third-party crypto library used by WordPress) to allow seamless login after a WordPress-to-Drupal migration, without the site ever being aware of the stored password. It works in conjunction with a command-line migration script that saves the PHPass hash for the unknown password to Drupal's user.data blob.</li>
+			</ul>
+		</article>
+	</section>
+	
+	<section class="main-section" id="design" name="design">
+		<h2>Design</h2>
+		<blockquote>Coming soon&hellip;</blockquote>
+	</section>
+
 	<section class="main-section" id="resume" name="resume">
 		<h2>R&eacute;sum&eacute;</h2>
 		
@@ -305,42 +353,6 @@
 				<span class="arrangement-type">(coursework)</span>
 			</article>
 		</section>
-	</section>
-	
-	<section class="main-section" id="development" name="development">
-		<h2>Development</h2>
-		
-		<article class="links-subsection" id="links" name="links">
-			<h3>Links</h3>
-			<ul>
-				<li><a target="_blank" href="http://curvolabs.com">Curvo Labs</a> &ndash; Miscellaneous features, fixes, and styling added to medical equipment marketplace app that was built on CodeIgniter and also incorporated Composer, Phinx, Guzzle, and Stripe (among others).</li>
-				<li><a target="_blank" href="http://omegaconvention.com">OmegaCon</a> &ndash; Multiple (annual) responsive themes, content development, SEO, promotion, ecommerce, custom reports for registration desk and various department heads.</li>
-				<li><a target="_blank" href="http://khameleon.org/work/hslc">Health Sciences Library Consortium</a> &ndash; CSS build, most of a Drupal theme (the latter was handed off to the Commonwealth of Pennsylvania's in-house developers due to a last-minute change of plans on their end. As far as I know, the project is still in bureaucratic purgatory, hence the layout's being hosted on my own web space.)</li>
-				<li><a target="_blank" href="http://coreknowledge.org">Core Knowledge Foundation</a> &ndash; CSS build, many custom PHP components.</li>
-				<li><a target="_blank" href="http://blog.coreknowledge.org">Core Knowledge Blog</a> &ndash; Custom WordPress theme based on CSS build from the main site above.</li>
-				<li><a target="_blank" href="http://books.coreknowledge.org">Core Knowledge Bookstore</a> &ndash; X-Cart theming, management, warehouse integration with UPS WorldShip and Stamps.com, accounting/inventory integration with Great Plains, custom database triggers to handle tracking number postback and buyer notifications.</li>
-				<li><a target="_blank" href="http://rhainsure.com">Resort Hotel Association</a> &ndash; CSS build, many custom PHP components.</li>
-				<li><a target="_blank" href="http://khameleon.org/work/applianceo">Appliance Outlet</a> &ndash; CSS build, light graphical work.</li>
-				<li><a target="_blank" href="http://8great.org">James V. Brown Summer Reading Program</a> &ndash; CSS build converted from a print ad, so lots of optimization was needed to achieve reasonable load times.</li>
-				<li><a target="_blank" href="http://tigerfuel.com">Tiger Fuel</a> &ndash; Numerous content updates, reworking layout on certain pages, troubleshooting various features (like the Flash/XML accordion on the homepage), and adding features to the supply chain management system.</li>
-				<li><a target="_blank" href="http://cvilleshop.com">Charlottesville Shopping</a> &ndash; Troubleshooting of maps, Facebook integration, and coupon generator.</li>
-			</ul>
-		</article>
-		
-		<article class="links-subsection" id="code-samples" name="code-samples">
-			<h3>Code Samples</h3>
-			<ul>
-				<li><a target="_blank" href="https://github.com/toastyghost/auth-net-ajax">Auth.net AJAX component</a> &ndash; This is a PHP component that is called via AJAX to submit a payment request to Authorize.net and report back its success status. It also includes logic related to the event registration wizard for which it was originally created, rendering the user's "finish later" token useless (but still remembering that it has been assigned) if the transaction is processed successfully.</li>
-				<li><a target="_blank" href="https://github.com/toastyghost/python-cloud-upload">Rackspace Cloud Sideloader</a> &ndash; This is a Python command-line utility for uploading from the local dedicated server filesystem to Rackspace Cloud Files. Its purpose was to allow legacy PHP4 applications, which are not officially supported by Rackspace, to make programmatic calls via the cloud API.</li>
-				<li><a target="_blank" href="https://github.com/toastyghost/auto-body-page">SilverStripe Page Type</a> &ndash; This is a component that contains both view and controller classes for a new page type in SilverStripe, an ORM-based open source CMS that uses the MVC design pattern.</li>
-				<li><a target="_blank" href="https://github.com/toastyghost/wordpress_password">WordPress Password Module for Drupal 7.x</a> &ndash; This is a Drupal 7 module that implements PHPass (the third-party crypto library used by WordPress) to allow seamless login after a WordPress-to-Drupal migration, without the site ever being aware of the stored password. It works in conjunction with a command-line migration script that saves the PHPass hash for the unknown password to Drupal's user.data blob.</li>
-			</ul>
-		</article>
-	</section>
-	
-	<section class="main-section" id="design" name="design">
-		<h2>Design</h2>
-		<blockquote>Coming soon&hellip;</blockquote>
 	</section>
 	
 	<section class="main-section" id="contact" name="contact">

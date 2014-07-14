@@ -60,9 +60,11 @@
 				<h1><a href="#" id="logo"><span id="first-letter">j</span>oshua d. clark</a></h1>
 				
 				<nav id="nav">
-					<a id="resume-navlink" class="navlink active" href="#resume">R&eacute;sum&eacute;</a>
+					<a id="intro-navlink" class="navlink active" href="#intro">Intro</a>
+					<a id="clients-navlink" class="navlink" href="#resume">Clients</a>
 					<a id="development-navlink" class="navlink" href="#development">Development</a>
 					<a id="design-navlink" class="navlink" href="#design">Design</a>
+					<a id="resume-navlink" class="navlink" href="#resume">R&eacute;sum&eacute;</a>
 					<a id="contact-navlink" class="navlink" href="#contact">Contact</a>
 				</nav>
 			</div>
