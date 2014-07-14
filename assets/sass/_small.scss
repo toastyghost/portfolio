@@ -48,6 +48,7 @@ body {
 			line-height: 2.45em;
 			font-size: 18px;
 			font-family: 'Fjalla One', sans-serif;
+			letter-spacing: 1.5px;
 			color: #f6d4ca;
 			
 			outline: none;
@@ -86,8 +87,8 @@ body {
 		margin: 30px auto;
 		width: 95%;
 		color: #3f3f3f;
-		font-family: 'Roboto', 'Open Sans', sans-serif;
-		text-shadow: 0 0 1px #3f3f3f;
+		font-family: Roboto, 'Open Sans', sans-serif;
+		line-height: 1.65rem;
 	}
 
 	#main {
@@ -142,6 +143,10 @@ body {
 			li {
 				margin-bottom: 1.25em;
 			}
+		}
+
+		&#contact {
+			margin-bottom: 360px;
 		}
 	}
 
@@ -225,5 +230,15 @@ body {
 
 	.error a {
 		
+	}
+
+
+
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 120px;
+		background-color: #14486f;
 	}
 }
