@@ -26,6 +26,7 @@ $(function(){
 		$old_experience.fadeToggle(300);
 	});
 	
+	// DEPRECATED: ajax contact form submission binding
 	/*$('#contact-form').on('submit', function(e) {
 		e.preventDefault();
 		
