@@ -1,14 +1,25 @@
 var app = angular.module('portfolio', ['firebase']),
-	fb = 'https://jdcportfolio.firebaseio.com/';
+	fb = 'https://jdcportfolio.firebaseio.com/',
+	deletePrompt = 'Are you sure?';
 
-app.controller('AdminController', function($scope, $firebase) {
+app.controller('ClientAdminController', function($scope, $firebase) {
 	
 	$scope.clients = $firebase(new Firebase(fb + 'clients'));
 	
 	$scope.addClient = function() {
-		if ($scope.newclient.name != '' && $scope.newclient.type != '' && $scope.newclient.description != '') {
+		if ($scope.newclient.name != '' && $scope.newclient.type != '' && $scope.newclient.desc != '') {
 			$scope.clients.$add($scope.newclient);
 			$scope.newclient = null;
+		}
+	}
+	
+	$scope.editClient = function(id) {
+		// TODO: implement modal editor
+	}
+	
+	$scope.deleteClient = function(id) {
+		if (confirm(deletePrompt)) {
+			$firebase(new Firebase(fb + 'clients/' + id)).$remove();
 		}
 	}
 });
@@ -23,11 +34,21 @@ app.controller('DevelopmentAdminController', function($scope, $firebase) {
 			$scope.newdev = null;
 		}
 	}
+	
+	$scope.editDevelopment = function(id) {
+		// TODO: implement modal editor
+	}
+	
+	$scope.deleteDevelopment = function(id) {
+		if (confirm(deletePrompt)) {
+			$firebase(new Firebase(fb + 'development/' + id)).$remove();
+		}
+	}
 });
 
 app.controller('DesignAdminController', function($scope, $firebase) {
 	
-	$scope.design = $firebase(new Firebase(fb + 'design'));
+	//$scope.design = $firebase(new Firebase(fb + 'design'));
 	
 	// TODO: determine fields
 });
@@ -42,6 +63,16 @@ app.controller('ExperienceAdminController', function($scope, $firebase) {
 			$scope.newexp = null;
 		}
 	}
+	
+	$scope.editExperience = function(id) {
+		// TODO: implement modal editor
+	}
+	
+	$scope.deleteExperience = function(id) {
+		if (confirm(deletePrompt)) {
+			$firebase(new Firebase(fb + 'resume/experience/' + id)).$remove();
+		}
+	}
 });
 
 app.controller('EducationAdminController', function($scope, $firebase) {
@@ -54,6 +85,16 @@ app.controller('EducationAdminController', function($scope, $firebase) {
 			$scope.newedu = null;
 		}
 	}
+	
+	$scope.editEducation = function(id) {
+		// TODO: implement modal editor
+	}
+	
+	$scope.deleteEducation = function(id) {
+		if (confirm(deletePrompt)) {
+			$firebase(new Firebase(fb + 'resume/education/' + id)).$remove();
+		}
+	}
 });
 
 app.controller('TestimonialsAdminController', function($scope, $firebase) {
@@ -64,6 +105,16 @@ app.controller('TestimonialsAdminController', function($scope, $firebase) {
 		if ($scope.newtestimonial.text != '' && $scope.newtestimonial.name != '') {
 			$scope.testimonials.$add($scope.newtestimonial);
 			$scope.newtestimonial = null;
+		}
+	}
+	
+	$scope.editTestimonial = function(id) {
+		// TODO: implement modal editor
+	}
+	
+	$scope.deleteTestimonial = function(id) {
+		if (confirm(deletePrompt)) {
+			$firebase(new Firebase(fb + 'testimonials/' + id)).$remove();
 		}
 	}
 });
