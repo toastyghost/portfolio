@@ -2,19 +2,19 @@ var app = angular.module('portfolio', ['firebase']),
 	fb = 'https://jdcportfolio.firebaseio.com/',
 	deletePrompt = 'Are you sure?';
 
-app.controller('ClientAdminController', function($scope, $firebase) {
+app.controller('ClientsAdminController', function($scope, $firebase) {
 	
 	$scope.clients = $firebase(new Firebase(fb + 'clients'));
 	
 	$scope.addClient = function() {
-		if ($scope.newclient.name != '' && $scope.newclient.type != '' && $scope.newclient.desc != '') {
+		if ($scope.newclient.name != '' && $scope.newclient.logo != '' && $scope.newclient.type != '' && $scope.newclient.desc != '') {
 			$scope.clients.$add($scope.newclient);
 			$scope.newclient = null;
 		}
 	}
 	
 	$scope.editClient = function(id) {
-		// TODO: implement modal editor
+		// TODO: implement inline editing
 	}
 	
 	$scope.deleteClient = function(id) {
@@ -36,7 +36,7 @@ app.controller('DevelopmentAdminController', function($scope, $firebase) {
 	}
 	
 	$scope.editDevelopment = function(id) {
-		// TODO: implement modal editor
+		// TODO: implement inline editing
 	}
 	
 	$scope.deleteDevelopment = function(id) {
@@ -65,12 +65,12 @@ app.controller('ExperienceAdminController', function($scope, $firebase) {
 	}
 	
 	$scope.editExperience = function(id) {
-		// TODO: implement modal editor
+		// TODO: implement inline editing
 	}
 	
 	$scope.deleteExperience = function(id) {
 		if (confirm(deletePrompt)) {
-			$firebase(new Firebase(fb + 'resume/experience/' + id)).$remove();
+			$firebase(new Firebase(fb + 'experience/' + id)).$remove();
 		}
 	}
 });
@@ -87,12 +87,12 @@ app.controller('EducationAdminController', function($scope, $firebase) {
 	}
 	
 	$scope.editEducation = function(id) {
-		// TODO: implement modal editor
+		// TODO: implement inline editing
 	}
 	
 	$scope.deleteEducation = function(id) {
 		if (confirm(deletePrompt)) {
-			$firebase(new Firebase(fb + 'resume/education/' + id)).$remove();
+			$firebase(new Firebase(fb + 'education/' + id)).$remove();
 		}
 	}
 });
@@ -109,7 +109,7 @@ app.controller('TestimonialsAdminController', function($scope, $firebase) {
 	}
 	
 	$scope.editTestimonial = function(id) {
-		// TODO: implement modal editor
+		// TODO: implement inline editing
 	}
 	
 	$scope.deleteTestimonial = function(id) {

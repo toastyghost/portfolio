@@ -5,7 +5,12 @@
 		}
 		
 		td {
+			padding: 0 5px;
 			vertical-align: top;
+			
+			textarea {
+				width: 100%;
+			}
 		}
 	}
 }

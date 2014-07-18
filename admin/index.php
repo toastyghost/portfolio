@@ -49,7 +49,7 @@
 				<td><input type="text" name="client-name" ng-model="newclient.name"></td>
 				<td><input type="file" name="client-logo" ng-model="newclient.logo"></td>
 				<td><input type="text" name="client-type" ng-model="newclient.type"></td>
-				<td><textarea name="client-description" ng-model="newclient.desc"></textarea></td>
+				<td><textarea name="client-desc" ng-model="newclient.desc"></textarea></td>
 				<td><button ng-click="addClient()">Add</button></td>
 			</tr>
 		</table>
@@ -117,7 +117,7 @@
 					<th colspan="2">Description</th>
 				</tr>
 				
-				<tr ng-repeat="(id, exp) in resume.experience">
+				<tr ng-repeat="(id, exp) in experience">
 					<td>{{exp.title}}</td>
 					<td>{{exp.employer}}</td>
 					<td>{{exp.start}}</td>
@@ -131,12 +131,12 @@
 				</tr>
 				
 				<tr>
-					<td><input type="text" name="resume-experience-title" ng-model="newexp.title"></td>
-					<td><input type="text" name="resume-experience-employer" ng-model="newexp.employer"></td>
-					<td><input type="date" name="resume-experience-period-start" ng-model="newexp.start"></td>
-					<td><input type="date" name="resume-experience-period-end" ng-model="newexp.end"></td>
-					<td><input type="text" name="resume-experience-arrangement" ng-model="newexp.arrange"></td>
-					<td><textarea name="resume-experience-description" ng-model="newexp.description"></textarea></td>
+					<td><input type="text" name="experience-title" ng-model="newexp.title"></td>
+					<td><input type="text" name="experience-employer" ng-model="newexp.employer"></td>
+					<td><input type="date" name="experience-period-start" ng-model="newexp.start"></td>
+					<td><input type="date" name="experience-period-end" ng-model="newexp.end"></td>
+					<td><input type="text" name="experience-arrangement" ng-model="newexp.arrange"></td>
+					<td><textarea name="experience-description" ng-model="newexp.description"></textarea></td>
 					<td><button ng-click="addExperience()">Add</button></td>
 				</tr>
 			</table>
@@ -156,7 +156,7 @@
 					<th colspan="2">Arrangement Type</th>
 				</tr>
 				
-				<tr ng-repeat="(id, edu) in resume.education">
+				<tr ng-repeat="(id, edu) in education">
 					<td>{{edu.school}}</td>
 					<td>{{edu.program}}</td>
 					<td>{{edu.start}}</td>
@@ -169,11 +169,11 @@
 				</tr>
 				
 				<tr>
-					<td><input type="text" name="resume-education-school" ng-model="newedu.school"></td>
-					<td><input type="text" name="resume-education-program" ng-model="newedu.program"></td>
-					<td><input type="date" name="resume-education-period-start" ng-model="newedu.start"></td>
-					<td><input type="date" name="resume-education-period-end" ng-model="newedu.end"></td>
-					<td><input type="text" name="resume-education-arrangement" ng-model="newedu.arrange"></td>
+					<td><input type="text" name="education-school" ng-model="newedu.school"></td>
+					<td><input type="text" name="education-program" ng-model="newedu.program"></td>
+					<td><input type="date" name="education-period-start" ng-model="newedu.start"></td>
+					<td><input type="date" name="education-period-end" ng-model="newedu.end"></td>
+					<td><input type="text" name="education-arrangement" ng-model="newedu.arrange"></td>
 					<td><button ng-click="addEducation()">Add</button></td>
 				</tr>
 			</table>
