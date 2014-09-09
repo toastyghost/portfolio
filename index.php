@@ -4,7 +4,7 @@
 
 	<section class="main-section" id="intro" name="intro">
 		<h2>Greetings &amp; salutations!</h2>
-		<p>This is a quick intro paragraph about me that will be filled in later. This is in no way meant to be final copy for this section of the site. If you see this on the live version of the site, don't hire me because I'm clearly a fucking idiot.</p>
+		<p>I am a full-stack developer who has worked with HTML/CSS/JS and the LAMP stack for over a decade. Below are descriptions of projects I've contributed to in the past, as well as links to work samples. If you have any questions about what you see here, please don't hesitate to <a href="mailto:toastyghost@live.com">email me</a>.</p>
 		<p>Thanks,</p>
 		<h2 style="font-family: Impact; font-size: 36px;">Insert signature graphic here</h2>
 	</section>
