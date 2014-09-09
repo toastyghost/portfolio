@@ -10,7 +10,7 @@
 	</section>
 
 	<section class="main-section" id="clients" name="clients">
-		<!-- placeholder for now -->
+		<!-- testing permissions shell script on pull -->
 	</section>
 	
 	<section class="main-section" id="development" name="development">
