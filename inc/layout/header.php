@@ -63,7 +63,7 @@
 				
 				<nav id="nav">
 					<a id="intro-navlink" class="navlink active" href="#intro">Intro</a>
-					<a id="clients-navlink" class="navlink" href="#resume">Clients</a>
+					<!--<a id="clients-navlink" class="navlink" href="#resume">Clients</a>-->
 					<a id="development-navlink" class="navlink" href="#development">Development</a>
 					<a id="design-navlink" class="navlink" href="#design">Design</a>
 					<a id="resume-navlink" class="navlink" href="#resume">R&eacute;sum&eacute;</a>

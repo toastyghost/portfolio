@@ -101,7 +101,7 @@ body {
 	.main-section {
 		@extend .content;
 		
-		& #intro {
+		&#intro {
 			.greeting {
 				font-family: 'Open Sans', sans-serif;
 			}
