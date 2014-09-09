@@ -10,7 +10,7 @@
 	</section>
 
 	<section class="main-section" id="clients" name="clients">
-		<!--<h2 style="font-family: Impact; font-size: 36px;">INSERT MAGICAL SCROLLY-GIG DOODAD THING HERE</h2>-->
+		<!-- placeholder for now -->
 	</section>
 	
 	<section class="main-section" id="development" name="development">
