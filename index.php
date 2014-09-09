@@ -3,7 +3,7 @@
 <div id="main">
 
 	<section class="main-section" id="intro" name="intro">
-		<h2>Greetings &amp; salutations!</h2>
+		<h2 class="greeting">Greetings &amp; salutations!</h2>
 		<p>I am a full-stack developer who has worked with HTML/CSS/JS and the LAMP stack for over a decade. Below are descriptions of projects I've contributed to in the past, as well as links to work samples. If you have any questions about what you see here, please don't hesitate to <a href="mailto:toastyghost@live.com">email me</a>.</p>
 		<p>Thanks,</p>
 		<img src="assets/images/signature.png">
