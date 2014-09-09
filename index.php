@@ -6,11 +6,11 @@
 		<h2>Greetings &amp; salutations!</h2>
 		<p>I am a full-stack developer who has worked with HTML/CSS/JS and the LAMP stack for over a decade. Below are descriptions of projects I've contributed to in the past, as well as links to work samples. If you have any questions about what you see here, please don't hesitate to <a href="mailto:toastyghost@live.com">email me</a>.</p>
 		<p>Thanks,</p>
-		<h2 style="font-family: Impact; font-size: 36px;">Insert signature graphic here</h2>
+		<img src="assets/images/signature.png">
 	</section>
 
 	<section class="main-section" id="clients" name="clients">
-		<h2 style="font-family: Impact; font-size: 36px;">INSERT MAGICAL SCROLLY-GIG DOODAD THING HERE</h2>
+		<!--<h2 style="font-family: Impact; font-size: 36px;">INSERT MAGICAL SCROLLY-GIG DOODAD THING HERE</h2>-->
 	</section>
 	
 	<section class="main-section" id="development" name="development">
