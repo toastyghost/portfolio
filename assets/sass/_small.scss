@@ -95,25 +95,29 @@ body {
 		margin: 130px auto;
 		width: 960px;
 
-		p { @extend .content }
+		p {
+			@extend .content;
+		}
 	}
 
 	.main-section {
 		@extend .content;
 		
-		&#intro {
-			.greeting {
-				font-family: 'Open Sans', sans-serif;
-			}
+		.subheading {
+			font-family: 'Open Sans', sans-serif;
 		}
 
 		h2 {
+			@extend .subheading;
+			
 			margin: 0 0 0.65em;
 			font-size: 24px;
 			font-weight: bold;
 		}
 
 		h3 {
+			@extend .subheading;
+			
 			margin-left: 1%;
 			font-size: 20px;
 		}
@@ -126,17 +130,23 @@ body {
 			}
 		}
 
-		li { margin-bottom: .45em }
+		li {
+			margin-bottom: .45em;
+		}
 
 		article {
 			margin-left: 2%;
 			margin-bottom: 2.25em;
 		}
-
-		&#education-section article {
-			article {
-				margin-bottom: .75em;
+		
+		.job-description {
+			ul {
+				margin-top: 10px;
 			}
+		}
+
+		.school-line {
+			margin-bottom: .25em;
 		}
 
 		&#development {
@@ -247,4 +257,8 @@ body {
 		height: 120px;
 		background-color: #14486f;
 	}
+}
+
+.clear {
+	clear: both;
 }

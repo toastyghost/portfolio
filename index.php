@@ -362,11 +362,11 @@
 			<blockquote>If you have a great idea for a project and are interested in working together to make your vision a reality, drop me a line below!</blockquote>
 			
 			<form name="contact" id="contact-form" method="post" action="contact.php">
-				<label for="name">Name</label> <input class="textbox" type="text" name="name"><br>
-				<label for="email">Email</label> <input class="textbox" type="email" name="email"><br>
+				<label for="name">Name</label> <input class="textbox" type="text" name="name"><br class="clear">
+				<label for="email">Email</label> <input class="textbox" type="email" name="email"><br class="clear">
 				
-				<label for="company">Company</label> <input class="textbox"type="text" name="company"><br>
-				<label for="phone">Phone</label> <input class="textbox" type="tel" name="phone"><br><br>
+				<label for="company">Company</label> <input class="textbox"type="text" name="company"><br class="clear">
+				<label for="phone">Phone</label> <input class="textbox" type="tel" name="phone"><br><br class="clear">
 				
 				<span class="sep-line">
 					<label class="placeholder">&nbsp;</label>
