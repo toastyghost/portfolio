@@ -118,7 +118,6 @@ body {
 		h3 {
 			@extend .subheading;
 			
-			margin-left: 1%;
 			font-size: 20px;
 		}
 
@@ -156,9 +155,18 @@ body {
 		}
 
 		.links-subsection {
-			li {
-				margin-bottom: 1.25em;
+			ul {
+				margin-left: .5em;
+				padding: 0;
+
+				li {
+					margin-bottom: 1.25em;
+				}
 			}
+		}
+
+		.resume-subsection {
+			margin-left: .5em;
 		}
 
 		&#contact {
