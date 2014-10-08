@@ -8,7 +8,7 @@
 	<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
 	<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
-	<script src="../assets/js/angular/app.js"></script>
+	<script src="../assets/js/angular/admin.js"></script>
 </head>
 
 <body>
