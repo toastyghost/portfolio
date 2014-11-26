@@ -17,7 +17,7 @@
 	
 	<nav id="admin-nav">
 		<a href="#clients">Clients</a>
-		<a href="#development">Development</a>
+		<a href="#work">Work</a>
 		<a href="#design">Design</a>
 		<a href="#resume">Resume</a>
 		<a href="#testimonials">Testimonials</a>
@@ -56,8 +56,8 @@
 		
 	</div>
 
-	<div id="development" ng-controller="DevelopmentAdminController">
-		<h2>Development</h2>
+	<div id="work" ng-controller="WorkAdminController">
+		<h2>Work</h2>
 		
 		<table class="entries-table">
 			<tr>
@@ -70,36 +70,32 @@
 				<th colspan="2">Tertiary Image</th>
 			</tr>
 			
-			<tr ng-repeat="(id, dev) in development">
-				<td>{{dev.title}}</td>
-				<td>{{dev.type}}</td>
-				<td>{{dev.client}}</td>
-				<td>{{dev.desc}}</td>
-				<td>{{dev.primaryImage}}</td>
-				<td>{{dev.secondaryImage}}</td>
-				<td>{{dev.tertiaryImage}}</td>
+			<tr ng-repeat="(id, piece) in work">
+				<td>{{piece.title}}</td>
+				<td>{{piece.type}}</td>
+				<td>{{piece.client}}</td>
+				<td>{{piece.desc}}</td>
+				<td>{{piece.primaryImage}}</td>
+				<td>{{piece.secondaryImage}}</td>
+				<td>{{piece.tertiaryImage}}</td>
 				<td>
-					<button ng-click="editDevelopment(id)">Edit</button>
-					<button ng-click="deleteDevelopment(id)">Delete</button>
+					<button ng-click="editWork(id)">Edit</button>
+					<button ng-click="deleteWork(id)">Delete</button>
 				</td>
 			</tr>
 			
 			<tr>
-				<td><input type="text" name="development-title" ng-model="newdev.title"></td>
-				<td><input type="text" name="development-type" ng-model="newdev.type"></td>
-				<td><input type="text" name="development-client" ng-model="newdev.client"></td>
-				<td><textarea name="development-description" ng-model="newdev.desc"></textarea></td>
-				<td><input type="file" name="development-primary-image" ng-model="newdev.primaryImage"></td>
-				<td><input type="file" name="development-secondary-image" ng-model="newdev.secondaryImage"></td>
-				<td><input type="file" name="development-tertiary-image" ng-model="newdev.tertiaryImage"></td>
-				<td><button ng-click="addDevelopment()">Add</button></td>
+				<td><input type="text" name="work-title" ng-model="newwork.title"></td>
+				<td><input type="text" name="work-type" ng-model="newwork.type"></td>
+				<td><input type="text" name="work-client" ng-model="newwork.client"></td>
+				<td><textarea name="work-description" ng-model="newwork.desc"></textarea></td>
+				<td><input type="file" name="work-primary-image" ng-model="newwork.primaryImage"></td>
+				<td><input type="file" name="work-secondary-image" ng-model="newwork.secondaryImage"></td>
+				<td><input type="file" name="work-tertiary-image" ng-model="newwork.tertiaryImage"></td>
+				<td><button ng-click="addWork()">Add</button></td>
 			</tr>
 		</table>
 		
-	</div>
-
-	<div id="design">
-		<!-- Coming soon... -->
 	</div>
 
 	<div id="resume">
