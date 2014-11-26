@@ -61,8 +61,8 @@
 		
 		<table class="entries-table">
 			<tr>
+				<th>Type</th>
 				<th>Title</th>
-				<th>Work Type</th>
 				<th>Client</th>
 				<th>Description</th>
 				<th>Primary Image</th>
@@ -85,7 +85,6 @@
 			</tr>
 			
 			<tr>
-				<td><input type="text" name="work-title" ng-model="newwork.title"></td>
 				<td>
 					<select name="work-type" ng-model="newwork.type">
 						<option value=""></option>
@@ -93,6 +92,7 @@
 						<option value="dev">Development</option>
 					</select>
 				</td>
+				<td><input type="text" name="work-title" ng-model="newwork.title"></td>
 				<td><input type="text" name="work-client" ng-model="newwork.client"></td>
 				<td><textarea name="work-description" ng-model="newwork.desc"></textarea></td>
 				<td><input type="file" name="work-primary-image" ng-model="newwork.primaryImage"></td>
