@@ -9,6 +9,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
 	<script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
 	<script src="../assets/js/angular/admin.js"></script>
+	<script src="../assets/js/angular/filters.js"></script>
 </head>
 
 <body>
@@ -111,6 +112,7 @@
 			
 			<table class="entries-table">
 				<tr>
+					<th>Parent</th>
 					<th>Title</th>
 					<th>Employer</th>
 					<th>Start</th>
@@ -120,6 +122,7 @@
 				</tr>
 				
 				<tr ng-repeat="(id, exp) in experience">
+					<td>{{exp.parent}}</td>
 					<td>{{exp.title}}</td>
 					<td>{{exp.employer}}</td>
 					<td>{{exp.start}}</td>
@@ -133,6 +136,12 @@
 				</tr>
 				
 				<tr>
+					<td>
+						<select name="experience-parent" ng-model="newexp.parent">
+							<option value=""></option>
+							<option ng-repeat="(id, exp) in experience | filter:isTopLevel" value="{{id}}">{{exp.title}}</option>
+						</select>
+					</td>
 					<td><input type="text" name="experience-title" ng-model="newexp.title"></td>
 					<td><input type="text" name="experience-employer" ng-model="newexp.employer"></td>
 					<td><input type="date" name="experience-period-start" ng-model="newexp.start"></td>

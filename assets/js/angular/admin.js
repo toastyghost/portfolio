@@ -49,6 +49,7 @@ app.controller('WorkAdminController', function($scope, $firebase) {
 app.controller('ExperienceAdminController', function($scope, $firebase) {
 	
 	$scope.experience = $firebase(new Firebase(fb + 'experience'));
+	$scope.parents = {};
 	
 	$scope.addExperience = function() {
 		if ($scope.newexp.title != '' && $scope.newexp.employer != '' && $scope.newexp.start != '' && $scope.newexp.description != '') {
