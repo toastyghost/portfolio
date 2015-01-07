@@ -1,5 +1,5 @@
 <?php require 'inc/layout/header.php' ?>
-		
+
 <div id="main">
 
 	<section class="main-section" id="intro" name="intro">
@@ -12,13 +12,14 @@
 	<section class="main-section" id="clients" name="clients">
 		<!-- testing permissions shell script on pull -->
 	</section>
-	
+
 	<section class="main-section" id="development" name="development">
 		<h2>Development</h2>
-		
+
 		<article class="links-subsection" id="links" name="links">
 			<h3>Links</h3>
 			<ul>
+				<li><a target="_blank" href="http://getmusketeer.com">Musketeer</a> &ndash; Content data structures using Simple Fields &amp; custom geolocation-based MailChimp subscription widget.</li>
 				<li><a target="_blank" href="http://curvolabs.com">Curvo Labs</a> &ndash; Miscellaneous features, fixes, and styling added to medical equipment marketplace app that was built on CodeIgniter and also incorporated Composer, Phinx, Guzzle, and Stripe (among others).</li>
 				<li><a target="_blank" href="http://omegaconvention.com">OmegaCon</a> &ndash; Multiple (annual) responsive themes, content development, SEO, promotion, ecommerce, custom reports for registration desk and various department heads.</li>
 				<li><a target="_blank" href="http://khameleon.org/work/hslc">Health Sciences Library Consortium</a> &ndash; CSS build, most of a Drupal theme (the latter was handed off to the Commonwealth of Pennsylvania's in-house developers due to a last-minute change of plans on their end. As far as I know, the project is still in bureaucratic purgatory, hence the layout's being hosted on my own web space.)</li>
@@ -32,39 +33,60 @@
 				<li><a target="_blank" href="http://cvilleshop.com">Charlottesville Shopping</a> &ndash; Troubleshooting of maps, Facebook integration, and coupon generator.</li>
 			</ul>
 		</article>
-		
+
 		<article class="links-subsection" id="code-samples" name="code-samples">
 			<h3>Code Samples</h3>
 			<ul>
+				<li><a target="_blank" href="https://github.com/toastyghost/geochimp">GeoChimp for WordPress</a> &ndash; plugin-ized work-in-progress of a simple widget/shortcode for creating MailChimp subscription forms for specific lists with mappable custom fields for geolocation data retrieved from Google's Geocoding API.</li>
+				<li><a target="_blank" href="https://github.com/toastyghost/highscore">Zend High Scores Endpoint</a> &ndash; A standalone Zend AMF endpoint that retrieves score postback data from an existing Flash game, bootstraps Drupal, and builds a node from it for high score tracking.</li>
 				<li><a target="_blank" href="https://github.com/toastyghost/auth-net-ajax">Auth.net AJAX component</a> &ndash; This is a PHP component that is called via AJAX to submit a payment request to Authorize.net and report back its success status. It also includes logic related to the event registration wizard for which it was originally created, rendering the user's "finish later" token useless (but still remembering that it has been assigned) if the transaction is processed successfully.</li>
 				<li><a target="_blank" href="https://github.com/toastyghost/python-cloud-upload">Rackspace Cloud Sideloader</a> &ndash; This is a Python command-line utility for uploading from the local dedicated server filesystem to Rackspace Cloud Files. Its purpose was to allow legacy PHP4 applications, which are not officially supported by Rackspace, to make programmatic calls via the cloud API.</li>
 				<li><a target="_blank" href="https://github.com/toastyghost/auto-body-page">SilverStripe Page Type</a> &ndash; This is a component that contains both view and controller classes for a new page type in SilverStripe, an ORM-based open source CMS that uses the MVC design pattern.</li>
 				<li><a target="_blank" href="https://github.com/toastyghost/wordpress_password">WordPress Password Module for Drupal 7.x</a> &ndash; This is a Drupal 7 module that implements PHPass (the third-party crypto library used by WordPress) to allow seamless login after a WordPress-to-Drupal migration, without the site ever being aware of the stored password. It works in conjunction with a command-line migration script that saves the PHPass hash for the unknown password to Drupal's user.data blob.</li>
+				<li><a target="_blank" href="https://github.com/toastyghost/portfolio">This Page</a> &ndash; so meta.</li>
 			</ul>
 		</article>
 	</section>
-	
-	<section class="main-section" id="design" name="design">
+
+	<!--<section class="main-section" id="design" name="design">
 		<h2>Design</h2>
 		<blockquote>Coming soon&hellip;</blockquote>
-	</section>
+	</section>-->
 
 	<section class="main-section" id="resume" name="resume">
 		<h2>R&eacute;sum&eacute;</h2>
-		
+
 		<section class="resume-subsection" id="experience-section" name="experience">
 			<h3>Experience</h3>
-			
+
+			<article class="work-experience">
+				<header class="job-headling">
+					<h4 class="job-title inline">WordPress Developer</h4> &ndash;
+					<span class="employer-name">3Pivots</span> &ndash;
+					<span class="period">
+						<time class="employment-start" datetime="2014-09" certainty="circa">September 2014</time> to
+						<time class="employment-end" datetime="2014-10" certainty="circa">October 2014</time>
+					</span>
+				</header>
+
+				<section class="job-description">
+					<ul>
+						<li>Created data structure for nontechnical client's content management using Simple Fields.</li>
+						<li>Implemented Google Geocoding API to retrieve geolocation data for custom fields in MailChimp.</li>
+					</ul>
+				</section>
+			</article>
+
 			<article class="work-experience">
 				<header class="job-headline">
 					<h4 class="job-title inline">CodeIgniter Developer</h4> &ndash;
 					<span class="employer-name">Curvo Labs</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2014-01" certainty="circa">January 2014</time> to 
-						<time class="employment-end" datetime="<?= date('Y-m') ?>" certainty="circa">present</time>
+						<time class="employment-start" datetime="2014-01" certainty="circa">January 2014</time> to
+						<time class="employment-end" datetime="2014-04" certainty="circa">April 2014</time>
 					</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Added features to medical equipment marketplace app targeting hospital purchasers and vendors.</li>
@@ -72,17 +94,17 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
 					<h4 class="job-title inline">Web Administrator &amp; Co-Founder</h4> &ndash;
 					<span class="employer-name">OmegaCon</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2013-05" certainty="circa">May 2013</time> to 
+						<time class="employment-start" datetime="2013-05" certainty="circa">May 2013</time> to
 						<time class="employment-end" datetime="<?= date('Y-m') ?>" certainty="circa">present</time>
 					</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Built annual responsive WordPress themes based on Bones and Joints.</li>
@@ -92,18 +114,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
-					<h4 class="job-title inline">RETS Developer</h4> &ndash; 
-					<span class="employer-name">Gayle Harvey Real Estate</span> &ndash; 
+					<h4 class="job-title inline">RETS Developer</h4> &ndash;
+					<span class="employer-name">Gayle Harvey Real Estate</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2013-04" certainty="circa">Apr 2013</time> to 
+						<time class="employment-start" datetime="2013-04" certainty="circa">Apr 2013</time> to
 						<time class="employment-end" datetime="2013-11" certainty="circa">Nov 2013</time>
 					</span>
 					<span class="arrangement-type">(contract)</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Created automated MLS property listing aggregator using the phRETS library.</li>
@@ -111,18 +133,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
-					<h4 class="job-title inline">Drupal Developer</h4> &ndash; 
+					<h4 class="job-title inline">Drupal Developer</h4> &ndash;
 					<span class="employer-name">Se&#241;or Wooly</span> &ndash;
-					<span class="period"> 
-						<time class="employment-start" datetime="2012-03" certainty="circa">Mar 2012</time> to 
+					<span class="period">
+						<time class="employment-start" datetime="2012-03" certainty="circa">Mar 2012</time> to
 						<time class="employment-end" datetime="2013-07" certainty="circa">Jul 2013</time>
 					</span>
 					<span class="arrangement-type">(contract)</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Created user and content migration scripts for digital teaching materials site going from WordPress to Drupal.</li>
@@ -131,17 +153,17 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
-					<h4 class="job-title inline">WordPress Developer</h4> &ndash; 
-					<span class="employer-name">DSML Executive Search</span> &ndash; 
+					<h4 class="job-title inline">WordPress Developer</h4> &ndash;
+					<span class="employer-name">DSML Executive Search</span> &ndash;
 					<span class="period">
 						<time class="employment-start" datetime="2013-04" certainty="circa">Apr 2013</time>
 					</span>
 					<span class="arrangement-type">(contract)</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Managed tight timeline subcontracting on behind-schedule project; got it to an on-schedule release with under a week's notice.</li>
@@ -151,18 +173,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
-					<h4 class="job-title inline">SilverStripe Developer</h4> &ndash; 
-					<span class="employer-name">Okay Yellow</span> &ndash; 
+					<h4 class="job-title inline">SilverStripe Developer</h4> &ndash;
+					<span class="employer-name">Okay Yellow</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2011-12" certainty="circa">Dec 2011</time> to 
+						<time class="employment-start" datetime="2011-12" certainty="circa">Dec 2011</time> to
 						<time class="employment-end" datetime="2012-01" certainty="circa">Jan 2012</time>
 					</span>
 					<span class="arrangement-type">(contract)</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Developed modular extensions for SilverStripe, a PHP 5.2+ -based OOP open-source CMS.</li>
@@ -171,18 +193,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
-					<h4 class="job-title inline">Web Developer</h4> &ndash; 
-					<span class="employer-name">The Ivy Group, Ltd.</span> &ndash; 
+					<h4 class="job-title inline">Web Developer</h4> &ndash;
+					<span class="employer-name">The Ivy Group, Ltd.</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2008-12" certainty="circa">Dec 2008</time> to 
+						<time class="employment-start" datetime="2008-12" certainty="circa">Dec 2008</time> to
 						<time class="employment-end" datetime="2011-09" certainty="circa">Sep 2011</time>
 					</span>
 					<span class="arrangement-type"></span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Built websites for clients of full-service advertising/PR agency.</li>
@@ -192,18 +214,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
-					<h4 class="job-title inline">Helpdesk Technician</h4> &ndash; 
-					<span class="employer-name">Sheridan Real Estate</span> &ndash; 
+					<h4 class="job-title inline">Helpdesk Technician</h4> &ndash;
+					<span class="employer-name">Sheridan Real Estate</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2007-06" certainty="circa">Jun 2006</time> to 
+						<time class="employment-start" datetime="2007-06" certainty="circa">Jun 2006</time> to
 						<time class="employment-end" datetime="2008-10" certainty="circa">Oct 2008</time>
 					</span>
 					<span class="arrangement-type">(part-time)</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Built and maintained computers for use by agents.</li>
@@ -211,18 +233,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience">
 				<header class="job-headline">
-					<h4 class="job-title inline">Web Application Developer</h4> &ndash; 
-					<span class="employer-name">Northern Arizona Muscle Tissue Institute</span> &ndash; 
+					<h4 class="job-title inline">Web Application Developer</h4> &ndash;
+					<span class="employer-name">Northern Arizona Muscle Tissue Institute</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2006-10" certainty="circa">Oct 2006</time> to 
+						<time class="employment-start" datetime="2006-10" certainty="circa">Oct 2006</time> to
 						<time class="employment-end" datetime="2006-12" certainty="circa">Dec 2006</time>
 					</span>
 					<span class="arrangement-type">(contract)</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Added features to massage therapy appointment scheduling system.</li>
@@ -230,18 +252,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience old">
 				<header class="job-headline">
-					<h4 class="job-title inline">Graphic Designer</h4> &ndash; 
-					<span class="employer-name">Commonwealth Engineering &amp; Construction</span> &ndash; 
+					<h4 class="job-title inline">Graphic Designer</h4> &ndash;
+					<span class="employer-name">Commonwealth Engineering &amp; Construction</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2006-08" certainty="circa">Aug 2006</time> to 
+						<time class="employment-start" datetime="2006-08" certainty="circa">Aug 2006</time> to
 						<time class="employment-end" datetime="2006-10" certainty="circa">Oct 2006</time>
 					</span>
 					<span class="arrangement-type">(contract)</span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Created photorealistic rendering of non-existent house for cover/promotional art for building proposals.</li>
@@ -250,18 +272,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience old">
 				<header class="job-headline">
-					<h4 class="job-title inline">Quality Assurance Lead</h4> &ndash; 
-					<span class="employer-name">MyNetCentral</span> &ndash; 
+					<h4 class="job-title inline">Quality Assurance Lead</h4> &ndash;
+					<span class="employer-name">MyNetCentral</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="2001-07" certainty="circa">Jul 2001</time> to 
+						<time class="employment-start" datetime="2001-07" certainty="circa">Jul 2001</time> to
 						<time class="employment-end" datetime="2002-03" certainty="circa">Mar 2002</time>
 					</span>
 					<span class="arrangement-type"></span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Oversaw testing and redevelopment of customer-reported issues with web hosting service.</li>
@@ -270,18 +292,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience old">
 				<header class="job-headline">
-					<h4 class="job-title inline">Software Test Engineer</h4> &ndash; 
-					<span class="employer-name">Prime Meridian Software</span> &ndash; 
+					<h4 class="job-title inline">Software Test Engineer</h4> &ndash;
+					<span class="employer-name">Prime Meridian Software</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="1999-11" certainty="circa">Nov 1999</time> to 
+						<time class="employment-start" datetime="1999-11" certainty="circa">Nov 1999</time> to
 						<time class="employment-end" datetime="2001-08" certainty="circa">Aug 2001</time>
 					</span>
 					<span class="arrangement-type"></span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Co-managed new test team for medical systems firm that had no formal testing process prior to my starting.</li>
@@ -290,18 +312,18 @@
 					</ul>
 				</section>
 			</article>
-			
+
 			<article class="work-experience old">
 				<header class="job-headline">
-					<h4 class="job-title inline">Graphics Technician</h4> &ndash; 
-					<span class="employer-name">McQuay International</span> &ndash; 
+					<h4 class="job-title inline">Graphics Technician</h4> &ndash;
+					<span class="employer-name">McQuay International</span> &ndash;
 					<span class="period">
-						<time class="employment-start" datetime="1998-08" certainty="circa">Aug 1998</time> to 
+						<time class="employment-start" datetime="1998-08" certainty="circa">Aug 1998</time> to
 						<time class="employment-end" datetime="1999-03" certainty="circa">Mar 1999</time>
 					</span>
 					<span class="arrangement-type"></span>
 				</header>
-				
+
 				<section class="job-description">
 					<ul>
 						<li>Modified scanned images of HVAC designs to meet strict formatting criteria.</li>
@@ -310,42 +332,42 @@
 				</section>
 			</article>
 		</section>
-		
+
 		<section class="resume-subsection" id="education-section" name="education">
 			<h3>Education</h3>
-			
+
 			<article class="school-line">
-				<h4 class="school-name inline">Massachusetts Institute of Technology OpenCourseWare</h4> &ndash; 
-				<span class="program-name">Computer Science</span> &ndash; 
+				<h4 class="school-name inline">Massachusetts Institute of Technology OpenCourseWare</h4> &ndash;
+				<span class="program-name">Computer Science</span> &ndash;
 				<span class="period">
-					<time class="education-start" datetime="2012" certainty="circa">2012</time> to 
+					<time class="education-start" datetime="2012" certainty="circa">2012</time> to
 					<time class="education-end" datetime="2013" certainty="circa">2013</time>
 				</span>
 				<span class="arrangement-type">(self-directed audit)</span>
 			</article>
-			
+
 			<article class="school-line">
-				<h4 class="school-name inline">University of Virginia</h4> &ndash; 
-				<span class="program-name">Engineering &amp; Applied Science</span> &ndash; 
+				<h4 class="school-name inline">University of Virginia</h4> &ndash;
+				<span class="program-name">Engineering &amp; Applied Science</span> &ndash;
 				<span class="period">
 					<time class="education-start" datetime="2000" certainty="circa">2000</time>
 				</span>
 				<span class="arrangement-type">(withdrew in good standing)</span>
 			</article>
-			
+
 			<article class="school-line">
-				<h4 class="school-name inline">Blue Ridge Community College</h4> &ndash; 
-				<span class="program-name">English Composition</span> &ndash; 
+				<h4 class="school-name inline">Blue Ridge Community College</h4> &ndash;
+				<span class="program-name">English Composition</span> &ndash;
 				<span class="period">
 					<time class="education-start" datetime="1999" certainty="circa">1999</time> to
 					<time class="education-end" datetime="2000" certainty="circa">2000</time>
 				</span>
 				<span class="arrangement-type">(coursework)</span>
 			</article>
-			
+
 			<article class="school-line">
-				<h4 class="school-name inline">James Madison University</h4> &ndash; 
-				<span class="program-name">Integrated Science and Technology</span> &ndash; 
+				<h4 class="school-name inline">James Madison University</h4> &ndash;
+				<span class="program-name">Integrated Science and Technology</span> &ndash;
 				<span class="period">
 					<time class="education-start" datetime="1998" certainty="circa">1998</time> to
 					<time class="education-end" datetime="1999" certainty="circa">1999</time>
@@ -354,30 +376,30 @@
 			</article>
 		</section>
 	</section>
-	
+
 	<section class="main-section" id="contact" name="contact">
 		<h2>Contact</h2>
-		
+
 		<span id="contact-container">
 			<blockquote>If you have a great idea for a project and are interested in working together to make your vision a reality, drop me a line below!</blockquote>
-			
+
 			<form name="contact" id="contact-form" method="post" action="contact.php">
 				<label for="name">Name</label> <input class="textbox" type="text" name="name"><br class="clear">
 				<label for="email">Email</label> <input class="textbox" type="email" name="email"><br class="clear">
-				
+
 				<label for="company">Company</label> <input class="textbox"type="text" name="company"><br class="clear">
 				<label for="phone">Phone</label> <input class="textbox" type="tel" name="phone"><br><br class="clear">
-				
+
 				<span class="sep-line">
 					<label class="placeholder">&nbsp;</label>
 					<label class="visible" for="project">Description of Project</label><br>
-					
+
 					<label class="placeholder">&nbsp;</label>
 					<textarea name="project"></textarea><br><br>
-					
+
 					<label class="placeholder">&nbsp;</label>
 					<label class="visible" for="budget">Estimated Budget</label><br>
-					
+
 					<label class="placeholder">&nbsp;</label>
 					<select name="budget">
 						<option value="Under $1k">Under $1,000</option>
@@ -387,14 +409,14 @@
 						<option value="$10k-25k">$10,000-25,000</option>
 						<option value="Over $25k">Over $25,000</option>
 					</select><br><br>
-					
+
 					<label class="placeholder">&nbsp;</label>
 					<input id="submit" type="submit">
 				</span>
 			</form>
 		</span>
-		
+
 	</section>
 </div>
-		
+
 <?php require 'inc/layout/footer.php' ?>
