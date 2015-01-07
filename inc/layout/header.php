@@ -13,16 +13,16 @@
 
 		<meta name="description" content="Seasoned full-stack web developer seeks new programming challenges! Take a look at my past work portfolio here.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+
 		<!-- Pretty fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
-		
+
 		<link href="assets/css/normalize.min.css" rel="stylesheet">
 		<link href="assets/css/style.css?<?=rand()?>" rel="stylesheet" media="screen" type="text/css">
-		
+
 		<!-- Apple/MS pageweight rape -->
 		<link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-touch-icon-114x114.png">
@@ -39,7 +39,7 @@
 		<link rel="icon" type="image/png" href="assets/icons/favicon-32x32.png" sizes="32x32">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="msapplication-TileImage" content="assets/icons/mstile-144x144.png">
-		
+
 		<!-- jQuery + plugins & bindings -->
 		<script src="//code.jquery.com/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -50,22 +50,22 @@
 		<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 		<!-- Fancy front-end app type stuff -->
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+		<!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
 		<script src="https://cdn.firebase.com/js/client/1.0.17/firebase.js"></script>
 		<script src="//cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
-		<script src="assets/js/angular/app.js"></script>
+		<script src="assets/js/angular/app.js"></script>-->
 	</head>
-	
+
 	<body>
 		<header id="header">
 			<div id="header-inner">
 				<h1><a href="#" id="logo"><span id="first-letter">j</span>oshua d. clark</a></h1>
-				
+
 				<nav id="nav">
 					<a id="intro-navlink" class="navlink active" href="#intro">Intro</a>
-					<!--<a id="clients-navlink" class="navlink" href="#resume">Clients</a>-->
+					<!--<a id="clients-navlink" class="navlink" href="#clients">Clients</a>-->
 					<a id="development-navlink" class="navlink" href="#development">Development</a>
-					<a id="design-navlink" class="navlink" href="#design">Design</a>
+					<!--<a id="design-navlink" class="navlink" href="#design">Design</a>-->
 					<a id="resume-navlink" class="navlink" href="#resume">R&eacute;sum&eacute;</a>
 					<a id="contact-navlink" class="navlink" href="#contact">Contact</a>
 				</nav>
