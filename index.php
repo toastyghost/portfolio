@@ -27,7 +27,7 @@
 				<li><a target="_blank" href="http://blog.coreknowledge.org">Core Knowledge Blog</a> &ndash; Custom WordPress theme based on CSS build from the main site above.</li>
 				<li><a target="_blank" href="http://books.coreknowledge.org">Core Knowledge Bookstore</a> &ndash; X-Cart theming, management, warehouse integration with UPS WorldShip and Stamps.com, accounting/inventory integration with Great Plains, custom database triggers to handle tracking number postback and buyer notifications.</li>
 				<li><a target="_blank" href="http://rhainsure.com">Resort Hotel Association</a> &ndash; CSS build, many custom PHP components.</li>
-				<li><a target="_blank" href="http://khameleon.org/work/applianceo">Appliance Outlet</a> &ndash; CSS build, light graphical work.</li>
+				<li><a target="_blank" href="http://khameleon.org/work/sites/applianceo">Appliance Outlet</a> &ndash; CSS build, light graphical work.</li>
 				<li><a target="_blank" href="http://8great.org">James V. Brown Summer Reading Program</a> &ndash; CSS build converted from a print ad, so lots of optimization was needed to achieve reasonable load times.</li>
 				<li><a target="_blank" href="http://tigerfuel.com">Tiger Fuel</a> &ndash; Numerous content updates, reworking layout on certain pages, troubleshooting various features (like the Flash/XML accordion on the homepage), and adding features to the supply chain management system.</li>
 				<li><a target="_blank" href="http://cvilleshop.com">Charlottesville Shopping</a> &ndash; Troubleshooting of maps, Facebook integration, and coupon generator.</li>
