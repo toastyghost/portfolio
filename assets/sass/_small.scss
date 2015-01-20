@@ -77,10 +77,17 @@ body {
 		left: 20vw;
 		float: left;
 		width: 60vw;
-	}
 
-	#main p {
-		@extend .content;
+		p {
+			@extend .content;
+		}
+
+		/*.section-divider {
+			border: 0;
+			height: 1px;
+			@import '_mixins';
+			@include linear-gradient(left, #ad4217, #14486f);
+		}*/
 	}
 
 	.main-section {
