@@ -215,15 +215,7 @@ body {
 				margin-right: 0.5vw;
 				width: 4vw;
 				line-height: 32px;
-			}
-
-			label.required::after {
-				content: '*';
-				color: red;
-			}
-
-			.sep-line label.visible {
-				float: none;
+				white-space: nowrap;
 			}
 
 			.textbox, textarea, select, #submit, option {
@@ -233,12 +225,18 @@ body {
 				color: #6f6f6f;
 			}
 
-			.textbox {
+			.textbox, select {
 				margin-bottom: 2px;
 				width: 10vw;
 				padding-left: 5px;
 				padding-right: 5px;
 				line-height: 26px;
+			}
+
+			select {
+				width: 10.7vw;
+				height: 32px;
+				line-height: 32px;
 			}
 
 			textarea {
