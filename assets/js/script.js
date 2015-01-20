@@ -26,8 +26,7 @@ $(function(){
 		$old_experience.fadeToggle(300);
 	});
 	
-	// DEPRECATED: ajax contact form submission binding
-	/*$('#contact-form').on('submit', function(e) {
+	$('#contact-form').on('submit', function(e) {
 		e.preventDefault();
 		
 		var $form = $(this),
@@ -35,7 +34,7 @@ $(function(){
 			$contact_container = $('#contact-container');
 		
 	    $.ajax({
-	    	url: 'http://khameleon.org/work/contact-submit.php',
+	    	url: 'http://khameleon.org/work/contact.php',
 	    	type: 'POST',
 	    	data: {test: 'test'},
 	    	dataType: 'json',
@@ -47,17 +46,13 @@ $(function(){
 	    return;
 	    
 	    $.ajax({
-			url: 'http://khameleon.org/work/contact-submit.php',
+			url: 'http://khameleon.org/work/contact.php',
 			type: 'POST',
 			data: form_data,
 			dataType: 'json',
 			success: function(data, textStatus, jqXHR) {
-				if (data === 'accepted') {
-					$contact_container.html('<blockquote>Your project inquiry was accepted. I will review it and respond to you at my earliest opportunity.</blockquote>');
-				} else {
-					$contact_container.after('<blockquote class="error">There was a problem submitting your inquiry. Please make sure you have filled in all fields and try again. If the problem persists, contact me directly at <a href="mailto:toastyghost@live.com">by email</a>.');
-				}
+				
 			}
 		});
-	});*/
+	});
 });
