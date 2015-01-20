@@ -8,7 +8,7 @@ body {
 		width: 20vw;
 		max-width: 20vw;
 		height: 100vw;
-		background-color: #d45e2e;
+		background-color: #ad4217;
 		text-align: right;
 	}
 
@@ -250,6 +250,20 @@ body {
 				font-family: 'Roboto', 'Open Sans', sans-serif;
 				font-size: 15px;
 			}
+		}
+
+		.contact-message {
+			display: none;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		#contact-success-message {
+			background-color: #209060;
+		}
+
+		#contact-failure-message {
+			background-color: #952b2b;
 		}
 	}
 }

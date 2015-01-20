@@ -4,8 +4,6 @@ $(function(){
 		active_classname = 'active',
 		$old_experience = $('.work-experience.old');
 	
-	$('body').scrollTop('0');
-	
 	$navlinks.on('click', function(e) {
 		var $this = $(this),
 			$requested_content = $('#' + this.id.replace('-navlink', ''));
@@ -16,7 +14,7 @@ $(function(){
 		$this.addClass(active_classname);
 		
 		$body.animate({
-			scrollTop: $requested_content.position().top - 100
+			scrollTop: $requested_content.position().top
 		}, 1000, 'easeInOutQuad');
 	});
 	
@@ -28,30 +26,22 @@ $(function(){
 	
 	$('#contact-form').on('submit', function(e) {
 		e.preventDefault();
-		
-		var $form = $(this),
-			form_data = $form.serialize(),
-			$contact_container = $('#contact-container');
+
+		var $contact_form = $('#contact-form'),
+			$contact_failure_message = $('#contact-failure-message');
 		
 	    $.ajax({
-	    	url: 'http://khameleon.org/work/contact.php',
-	    	type: 'POST',
-	    	data: {test: 'test'},
-	    	dataType: 'json',
-	    	success: function(data) {
-	    		alert(data);
-	    	}
-	    });
-	    
-	    return;
-	    
-	    $.ajax({
-			url: 'http://khameleon.org/work/contact.php',
+			url: 'contact.php',
 			type: 'POST',
-			data: form_data,
+			data: $contact_form.serialize(),
 			dataType: 'json',
 			success: function(data, textStatus, jqXHR) {
-				
+				if (data == 1) {
+					$contact_form.add($contact_failure_message).hide();
+					$('#contact-success-message').show();
+				} else {
+					$contact_failure_message.show();
+				}
 			}
 		});
 	});
