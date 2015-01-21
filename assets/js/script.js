@@ -30,12 +30,12 @@ $(function(){
 		var error_messages = [],
 			$contact_failure_message = $('#contact-failure-message'),
 			form_data = {
-				name: document.getElementById('name').value,
-				email: document.getElementById('email').value,
-				company: document.getElementById('company').value,
-				phone: document.getElementById('phone').value,
-				budget: document.getElementById('budget').value,
-				project: document.getElementById('project').value
+				name: document.getElementById('name-field').value,
+				email: document.getElementById('email-field').value,
+				company: document.getElementById('company-field').value,
+				phone: document.getElementById('phone-field').value,
+				budget: document.getElementById('budget-field').value,
+				project: document.getElementById('project-field').value
 			};
 
 		if (form_data.length > 0) {

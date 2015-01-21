@@ -446,14 +446,14 @@
 			<blockquote id="contact-text">If you have a great idea for a project and are interested in working together to make your vision a reality, drop me a line below!</blockquote>
 
 			<form name="contact" id="contact-form">
-				<label for="name">Name</label> <input class="textbox" type="text" name="name"><br>
-				<label for="email">Email</label> <input class="textbox" type="email" name="email"><br>
+				<label for="name">Name</label> <input class="textbox" type="text" id="name-field" name="name"><br>
+				<label for="email">Email</label> <input class="textbox" type="email" id="email-field" name="email"><br>
 
-				<label for="company">Company</label> <input class="textbox"type="text" name="company"><br>
-				<label for="phone">Phone</label> <input class="textbox" type="tel" name="phone"><br>
+				<label for="company">Company</label> <input class="textbox"type="text" id="company-field" name="company"><br>
+				<label for="phone">Phone</label> <input class="textbox" type="tel" id="phone-field" name="phone"><br>
 
 				<label for="budget">Budget</label>
-				<select name="budget">
+				<select id="budget-field" name="budget">
 					<option value="Under $1k">Under $1,000</option>
 					<option value="$1k-2.5k">$1,000-2,500</option>
 					<option value="$2.5-5k">$2,500-5,000</option>
@@ -464,7 +464,7 @@
 
 				<span class="sep-line">
 					<label class="visible" for="project">Description of Project</label><br>
-					<textarea name="project"></textarea><br>
+					<textarea id="project-field" name="project"></textarea><br>
 					<input id="submit" type="submit">
 				</span>
 			</form>
