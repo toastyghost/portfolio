@@ -75,15 +75,19 @@ $(function(){
 		}
 
 		if (error_messages.length > 0) {
-			$contact_failure_message[0].innerHTML = '';
+			$contact_failure_message.fadeOut({
+				complete: function() {
+					$contact_failure_message[0].innerHTML = '';
 
-			var key = 0;
-			while (key < error_messages.length) {
-				$contact_failure_message[0].innerHTML += error_messages[key] + '<br>';
-				++key;
-			}
+					var key = 0;
+					while (key < error_messages.length) {
+						$contact_failure_message[0].innerHTML += error_messages[key] + '<br>';
+						++key;
+					}
 
-			$contact_failure_message.fadeIn();
+					$contact_failure_message.fadeIn();
+				}
+			});
 		}
 	});
 });
