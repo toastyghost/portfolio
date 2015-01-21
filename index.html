@@ -466,24 +466,25 @@
 			<div id="contact-failure-message" class="contact-message"></div>
 		</footer>
 
-		<!-- Non-blocking pretty fonts & custom styling -->
-		<link href="assets/css/style.css" rel="stylesheet" media="screen" type="text/css">
-		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400|Fjalla+One|Open+Sans" rel="stylesheet" type="text/css">
-
+		<!-- Non-blocking styling -->
 		<script>
-			var cb = function() {
+			var cb = function(href) {
 				var l = document.createElement('link');
 
 				l.rel = 'stylesheet';
-				l.href = 'assets/css/style.css';
+				l.href = href;
 
 				var h = document.getElementsByTagName('head')[0];
 				h.parentNode.insertBefore(l, h);
 			};
 
-			var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-			if (raf) raf(cb);
-			else window.addEventListener('load', cb);
+			var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame,
+				resources = ['assets/css/style.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400|Fjalla+One|Open+Sans'];
+			
+			for (resource in resources) {
+				if (raf) raf(cb(resource));
+				else window.addEventListener('load', cb(resource));
+			}
 		</script>
 
 		<!-- jQuery + plugins & bindings -->
