@@ -28,7 +28,8 @@ $(function(){
 		e.preventDefault();
 
 		var error_messages = [],
-			form_data = $('#contact-form').serializeArray(),
+			$contact_form = $('#contact-form'),
+			form_data = $contact_form.serializeArray(),
 			$contact_failure_message = $('#contact-failure-message'),
 			$contact_text = $('#contact-text');
 
