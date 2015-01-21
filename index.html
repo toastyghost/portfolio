@@ -467,6 +467,8 @@
 		</footer>
 
 		<!-- Non-blocking styling -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400|Fjalla+One|Open+Sans">
+
 		<script>
 			var cb = function(href) {
 				var l = document.createElement('link');
@@ -479,11 +481,11 @@
 			};
 
 			var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame,
-				resources = ['assets/css/style.css', 'http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400|Fjalla+One|Open+Sans'];
+				resources = ['assets/css/style.css'];
 			
-			for (resource in resources) {
-				if (raf) raf(cb(resource));
-				else window.addEventListener('load', cb(resource));
+			for (key in resources) {
+				if (raf) raf(cb(resources[key]));
+				else window.addEventListener('load', cb(resources[key]));
 			}
 		</script>
 
