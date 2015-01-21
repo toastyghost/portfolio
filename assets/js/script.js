@@ -57,12 +57,14 @@ $(function(){
 				dataType: 'json',
 				success: function(data, textStatus, jqXHR) {
 					if (data == 1) {
-						$contact_form.add($(
-							$contact_text,
-							$contact_failure_message
-						)).fadeOut({complete: function() {
-							$('#contact-success-message').fadeIn();
-						}});
+						$contact_form
+						.add($contact_text)
+						.add($contact_failure_message)
+						.fadeOut({
+							complete: function() {
+								$('#contact-success-message').fadeIn();
+							}
+						});
 					} else {
 						error_messages.push('Inquiry could not be submitted. If this problem persists, please <a href="mailto:toastyghost@live.com">email</a> me your project details.');
 					}
