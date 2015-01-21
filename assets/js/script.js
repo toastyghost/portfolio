@@ -38,16 +38,16 @@ $(function(){
 				project: document.getElementById('project-field').value
 			};
 
-		if (form_data.length > 0) {
-			if (form_data[0] == '') {
+		if (!isEmpty(form_data)) {
+			if (form_data.name == '') {
 				error_messages.push('You must enter your name.');
 			}
 
-			if (form_data[1] == '' || !isValidEmail(form_data[1].value)) {
+			if (form_data.email == '' || !isValidEmail(form_data.email)) {
 				error_messages.push('You must enter a valid email address.');
 			}
 
-			if (form_data[5] == '') {
+			if (form_data.project == '') {
 				error_messages.push('You must enter some details about your project.');
 			}
 		} else {
@@ -92,3 +92,13 @@ function isValidEmail(emailAddress) {
 	var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 	return pattern.test(emailAddress);
 };
+
+function isEmpty(obj) {
+	for (var prop in obj) {
+		if (obj.hasOwnProperty(prop)) {
+			return false;
+		}
+	}
+
+	return true;
+}
