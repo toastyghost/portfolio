@@ -60,8 +60,9 @@ $(function(){
 						$contact_form.add($(
 							$contact_text,
 							$contact_failure_message
-						)).fadeOut();
-						$('#contact-success-message').show();
+						)).fadeOut({complete: function() {
+							$('#contact-success-message').fadeIn();
+						}});
 					} else {
 						error_messages.push('Inquiry could not be submitted. If this problem persists, please <a href="mailto:toastyghost@live.com">email</a> me your project details.');
 					}
@@ -78,7 +79,7 @@ $(function(){
 				++key;
 			}
 
-			$contact_failure_message.show();
+			$contact_failure_message.fadeIn();
 		}
 	});
 });
