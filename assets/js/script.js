@@ -57,10 +57,9 @@ $(function(){
 				dataType: 'json',
 				success: function(data, textStatus, jqXHR) {
 					if (data == 1) {
-						$contact_form
-						.add($contact_text)
-						.add($contact_failure_message)
-						.fadeOut({
+						$contact_text.fadeOut();
+						$contact_failure_message.fadeOut();
+						$contact_form.fadeOut({
 							complete: function() {
 								$('#contact-success-message').fadeIn();
 							}
