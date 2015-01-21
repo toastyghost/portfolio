@@ -28,21 +28,26 @@ $(function(){
 		e.preventDefault();
 
 		var error_messages = [],
-			$contact_form = $('#contact-form'),
-			form_data = $contact_form.serializeArray(),
 			$contact_failure_message = $('#contact-failure-message'),
-			$contact_text = $('#contact-text');
+			form_data = {
+				name: document.getElementById('name').value,
+				email: document.getElementById('email').value,
+				company: document.getElementById('company').value,
+				phone: document.getElementById('phone').value,
+				budget: document.getElementById('budget').value,
+				project: document.getElementById('project').value
+			};
 
 		if (form_data.length > 0) {
-			if (form_data[0].value == '') {
+			if (form_data[0] == '') {
 				error_messages.push('You must enter your name.');
 			}
 
-			if (form_data[1].value == '' || !isValidEmail(form_data[1].value)) {
+			if (form_data[1] == '' || !isValidEmail(form_data[1].value)) {
 				error_messages.push('You must enter a valid email address.');
 			}
 
-			if (form_data[5].value == '') {
+			if (form_data[5] == '') {
 				error_messages.push('You must enter some details about your project.');
 			}
 		} else {
@@ -57,9 +62,6 @@ $(function(){
 				dataType: 'json',
 				success: function(data, textStatus, jqXHR) {
 					if (data == 1) {
-						/*$contact_text.fadeOut();
-						$contact_failure_message.fadeOut();
-						$contact_form.fadeOut({*/
 						$('#contact-form, #contact-text, #contact-failure-message').fadeOut({
 							complete: function() {
 								$('#contact-success-message').fadeIn();
